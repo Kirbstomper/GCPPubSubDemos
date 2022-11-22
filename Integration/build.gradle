@@ -19,9 +19,11 @@ repositories {
 }
 
 dependencies {
-	compileOnly 'org.springframework.cloud:spring-cloud-gcp-starter-pubsub:1.2.5.RELEASE'
-    compileOnly 'org.springframework.integration:spring-integration-core'
-	compileOnly 'org.projectlombok:lombok'
+	implementation 'org.springframework.cloud:spring-cloud-gcp-starter-pubsub:1.2.5.RELEASE'
+    implementation 'org.springframework.integration:spring-integration-core'
+	implementation 'org.projectlombok:lombok'
+  	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'io.perfmark:perfmark-api:0.26.0'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
